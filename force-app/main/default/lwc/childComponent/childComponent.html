@@ -1,0 +1,36 @@
+<template>
+    <lightning-card>
+        <lightning-layout >
+
+            <lightning-layout-item size="3"> add
+            <lightning-input title=" first value" onchange={HandleOne}></lightning-input>
+            <lightning-input title=" second value" onchange={HandleTwo}></lightning-input>
+           
+            
+            </lightning-layout-item>
+            
+            <lightning-layout-item size="3"> difference
+            <lightning-input title=" first value" onchange={HandleThree}></lightning-input>
+            <lightning-input title=" second value" onchange={HandleFour}></lightning-input>
+           
+           
+            </lightning-layout-item>
+            
+            <lightning-layout-item size="3">times
+            <lightning-input title=" first value" onchange={HandleFive}></lightning-input>
+            <lightning-input title=" second value" onchange={HandleSix}></lightning-input>
+           
+            
+            </lightning-layout-item>
+            
+            <lightning-layout-item size="3"> division
+            <lightning-input title=" first value" onchange={HandleSeven}></lightning-input>
+            <lightning-input title=" second value" onchange={HandleEight}></lightning-input>
+            
+            </lightning-layout-item>
+            
+            
+            </lightning-layout>
+        <span slot="footer">result={result}</span>
+    </lightning-card>
+</template>

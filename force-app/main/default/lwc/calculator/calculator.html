@@ -1,0 +1,34 @@
+<template>
+<lightning-card title="Calculator">
+<lightning-layout vertical-align="space" multiple-rows="true" class="x-large">
+<lightning-layout-item flexibility="auto" padding="around-small" class="custom-box"  >
+    <lightning-card  >
+        <lightning-button label="Add" onclick={addFunc}></lightning-button>  
+        <c-add-child></c-add-child>  
+    </lightning-card> 
+    </lightning-layout-item>
+
+
+    <lightning-layout-item flexibility="auto" padding="around-small" class="custom-box"  >
+        <lightning-card  >
+            <lightning-button label="Sub" onclick={subFunc}></lightning-button> 
+            <c-sub-child></c-sub-child>  
+        </lightning-card> 
+    </lightning-layout-item>
+
+    <lightning-layout-item flexibility="auto" padding="around-small" class="custom-box"  >
+        <lightning-card  >
+            <lightning-button label="Multiply" onclick={multiFunc}></lightning-button>  
+            <c-multiply-child></c-multiply-child> 
+        </lightning-card> 
+    </lightning-layout-item>
+
+    <lightning-layout-item flexibility="auto" padding="around-small" class="custom-box"  >
+        <lightning-card >
+            <lightning-button onclick={divFunc} label="Divide"></lightning-button>  
+            <c-div-child></c-div-child> 
+        </lightning-card> 
+    </lightning-layout-item>
+</lightning-layout>
+</lightning-card>
+</template>

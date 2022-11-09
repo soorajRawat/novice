@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Searched Account">
+        <lightning-input label="Search Field" type="Search" value={Accs} onchange={changeInput}
+        placeholder="Search for Accounts"></lightning-input>
+        <lightning-button label="Search" onclick={UpdateSearch}></lightning-button>
+        <template for:each={acco} for:item='ac'>
+            <div key={ac.Id}>
+                <p>Account Name{ac.Name}</p>
+                <p>Website {ac.Website}</p>
+                <p>Industry  {ac.Industry}</p>
+                <lightning-button label="Create Contact" onclick={Creation}></lightning-button>
+                <c-contact-with-account acc-id={accountId}></c-contact-with-account>
+
+              <lightning-input value={ac.Id} type="checkbox" onchange={handleSelect} label={ac.Name}>
+                </lightning-input>
+
+            </div>
+
+        </template>
+
+     </lightning-card>
+    
+</template>

@@ -1,0 +1,17 @@
+<template>
+    <lightning-card>
+        <lightning-button label="Contact" onclick={handleSuccess} >
+        </lightning-button>
+        <lightning-input label="number of records " type="integer" onchange={handleInput}></lightning-input>
+        <template if:true={contacts}>
+           
+            <lightning-datatable
+                key-field="Id"
+                data={contacts}
+                columns={columns}
+
+            >
+           </lightning-datatable>
+        </template>
+    </lightning-card>
+</template>
